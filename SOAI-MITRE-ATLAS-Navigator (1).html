@@ -624,7 +624,7 @@ function open_tech(id) {
     <div class="chips">${t.rel.map(r=>{const x=TECHS.find(t=>t.id===r);return x?`<span class="chip" onclick="open_tech('${r}')">${r.replace('AML.','').replace('T0','T')} &#8212; ${x.n}</span>`:'';}).join('')}</div>` : ''}
     <div class="panel-actions">
       <button class="action-btn" onclick="window.open('https://atlas.mitre.org/techniques/${t.id}','_blank')">View on ATLAS &#8599;</button>
-      <button class="action-btn" onclick="window.open('https://www.ai-rmf.com/risk-tool','_blank')">AI Risk Table &#8599;</button>
+      <button class="action-btn" onclick="window.open('https://www.security-of-ai.com/risk-navigator','_blank')">AI Risk Navigator &#8599;</button>
       <button class="action-btn" onclick="window.open('https://www.security-of-ai.com','_blank')">Security of AI&#8482; &#8599;</button>
     </div>
   `;
