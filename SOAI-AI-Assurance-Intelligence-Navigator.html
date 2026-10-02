@@ -1101,8 +1101,8 @@ function renderGrid(){
 }
 
 function escAttr(s){return String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
-function atlasUrl(id){return 'https://atlas.mitre.org/techniques/'+encodeURIComponent(id)+'/';}
-function vulnUrl(id){return 'https://www.security-of-ai.com/vulnerabilities#'+encodeURIComponent(id);}
+function atlasUrl(id){return 'https://atlas.mitre.org/matrices/ATLAS-matrix/';}
+function vulnUrl(id){return 'https://www.security-of-ai.com/vulnerability-navigator#'+encodeURIComponent(id);}
 function nistUrl(){return 'https://airc.nist.gov/airmf-resources/playbook/';}
 function owaspUrl(){return 'https://genai.owasp.org/llm-top-10/';}
 function sourceTag(cls,label,url,title){return '<a class="tag '+cls+'" href="'+url+'" target="_blank" rel="noopener noreferrer" title="'+escAttr(title||label)+'" style="text-decoration:none">'+label+' &#8599;</a>';}
@@ -1154,11 +1154,11 @@ function openV(id){
     +relHtml
     +'<div class="panel-actions">'
     +'<button class="action-btn" onclick="window.open(\'https://airc.nist.gov\',\'_blank\')">NIST AI RMF &#8599;</button>'
-    +'<button class="action-btn" onclick="window.open(\'https://atlas.mitre.org\',\'_blank\')">MITRE ATLAS &#8599;</button>'
+    +'<button class="action-btn" onclick="window.open(\'https://atlas.mitre.org/matrices/ATLAS-matrix\',\'_blank\')">MITRE ATLAS &#8599;</button>'
     +'<button class="action-btn" onclick="window.open(\'https://github.com/Azure/PyRIT\',\'_blank\')">PyRIT &#8599;</button>'
-    +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com/tools\',\'_blank\')">AI Risk Navigator &#8599;</button>'
-    +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com/atlas\',\'_blank\')">ATLAS Navigator &#8599;</button>'
-    +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com/vulnerabilities\',\'_blank\')">Vulnerability Navigator &#8599;</button>'
+    +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com/risk-navigator\',\'_blank\')">AI Risk Navigator &#8599;</button>'
+    +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com/atlas-navigator\',\'_blank\')">ATLAS Navigator &#8599;</button>'
+    +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com/vulnerability-navigator\',\'_blank\')">Vulnerability Navigator &#8599;</button>'
     +'<button class="action-btn" onclick="window.open(\'https://www.security-of-ai.com\',\'_blank\')">Security of AI&#8482; &#8599;</button>'
     +'</div>';
 
